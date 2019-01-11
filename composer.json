@@ -1,0 +1,10 @@
+{
+    "name": "drupal_base",
+    "authors": [
+        {
+            "name": "Nick Mole",
+            "email": "nmole065@gmail.com"
+        }
+    ],
+    "require": {}
+}

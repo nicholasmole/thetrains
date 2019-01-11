@@ -1,0 +1,8 @@
+name: pre-trains
+recipe: drupal8
+config:
+  webroot: drupal_base/web
+  php: '7.2'
+  via: nginx
+  database: mariadb:10.1
+  xdebug: true
