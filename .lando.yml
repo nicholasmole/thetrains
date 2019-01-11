@@ -1,7 +1,7 @@
-name: pre-trains
+name: train_site
 recipe: drupal8
 config:
-  webroot: drupal_base/web
+  webroot: train_site/web
   php: '7.2'
   via: nginx
   database: mariadb:10.1
