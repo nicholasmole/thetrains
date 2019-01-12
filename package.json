@@ -25,5 +25,8 @@
     "presets": [
       "es2015"
     ]
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1"
   }
 }

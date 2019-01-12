@@ -1,12 +1,17 @@
 var path = require("path");
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+const themeCss = new ExtractTextPlugin("../css/theme.css");
+
 module.exports = {
-	entry: "./drupal_base/web/themes/{custom/testTheme/src/js/index.js}",
+	entry: [
+		"./train_site/web/themes/custom/trains/js/src/index.js",
+		"./train_site/web/themes/custom/trains/css/scss/theme.scss",
+	],
 	cache: false,
   output: {
-    path:  path.resolve(__dirname,"drupal_base/web/themes/{custom/testTheme/js/}"),
-    filename: "main.js",
+    path:  path.resolve(__dirname,"train_site/web/themes/custom/trains/js"),
+    filename: "theme.js",
     publicPath: "./"
   },
   module: {
@@ -20,7 +25,7 @@ module.exports = {
       },
       {
 				test: /\.scss|.sass$/,
-				use: ExtractTextPlugin.extract({
+				use: themeCss.extract({
 					fallback: 'style-loader',
 					use: [
 						{
@@ -35,8 +40,6 @@ module.exports = {
     ]
 	},
 	plugins: [		
-		new ExtractTextPlugin({
-			filename: '../css/{theme.style.css}'
-		})
+		themeCss
 	]
 };

@@ -2,6 +2,8 @@
 
 Description for the base drupal app
 
+
+
 # How to start
 
 First go through the application and rename areas that

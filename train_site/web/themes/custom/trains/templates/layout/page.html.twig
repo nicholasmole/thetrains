@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Theme override to display a single page.
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.content: The main content of the current page.
+ * - page.footer: Items for the footer region.
+ *
+ */
+#}
+<div class="layout-container container">
+	<header>
+  	{{ page.header }}
+	</header>
+  {{ page.primary_menu }}
+
+  <main class="container" role="main">
+
+    <div class="layout-content col-md-12">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
+  </main>
+
+  {{ page.footer }}
+
+</div>{# /.layout-container #}
