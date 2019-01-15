@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fb184f8e54b99b8f8d1aeea23b29937",
+    "content-hash": "b16c9e5c6978f082fc3d2ef593636971",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3067,17 +3067,104 @@
             "time": "2018-12-27T22:03:43+00:00"
         },
         {
-            "name": "nikic/php-parser",
-            "version": "v4.1.1",
+            "name": "nicholasmole/jsonapirequest",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610"
+                "url": "https://github.com/nicholasmole/JsonApiRequest.git",
+                "reference": "fad9e6ecf7e815e617ff448c6abff08c0ecc8e18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
-                "reference": "8aae5b59b83bb4d0dbf07b0a835f2680a658f610",
+                "url": "https://api.github.com/repos/nicholasmole/JsonApiRequest/zipball/fad9e6ecf7e815e617ff448c6abff08c0ecc8e18",
+                "reference": "fad9e6ecf7e815e617ff448c6abff08c0ecc8e18",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "NicholasMole\\JsonApiRequest\\": "src/"
+                },
+                "files": [
+                    "src/JsonApiRequest.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nick Mole",
+                    "email": "nmole065@gmail.com"
+                }
+            ],
+            "description": "Request Json Api using PHP Curl",
+            "support": {
+                "source": "https://github.com/nicholasmole/JsonApiRequest/tree/v0.1.1",
+                "issues": "https://github.com/nicholasmole/JsonApiRequest/issues"
+            },
+            "time": "2019-01-13T20:15:47+00:00"
+        },
+        {
+            "name": "nicholasmole/mtbaapi",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nicholasmole/MtbaApi.git",
+                "reference": "cf687a209dcbca4f46e5a2b2fe36e08f45109154"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nicholasmole/MtbaApi/zipball/cf687a209dcbca4f46e5a2b2fe36e08f45109154",
+                "reference": "cf687a209dcbca4f46e5a2b2fe36e08f45109154",
+                "shasum": ""
+            },
+            "require": {
+                "nicholasmole/jsonapirequest": ">=0.1.1"
+            },
+            "type": "drupal-module",
+            "autoload": {
+                "psr-4": {
+                    "NicholasMole\\JsonApiRequest\\": "nicholasmole/jsonapirequest/src/"
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nicholas Mole",
+                    "email": "nmole065@gmail.com"
+                }
+            ],
+            "description": "Request Data from MTBA REST API",
+            "support": {
+                "source": "https://github.com/nicholasmole/MtbaApi/tree/v0.1",
+                "issues": "https://github.com/nicholasmole/MtbaApi/issues"
+            },
+            "time": "2019-01-15T15:21:01+00:00"
+        },
+        {
+            "name": "nikic/php-parser",
+            "version": "v4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
+                "reference": "594bcae1fc0bccd3993d2f0d61a018e26ac2865a",
                 "shasum": ""
             },
             "require": {
@@ -3093,7 +3180,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.1-dev"
+                    "dev-master": "4.2-dev"
                 }
             },
             "autoload": {
@@ -3115,7 +3202,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-12-26T11:32:39+00:00"
+            "time": "2019-01-12T16:31:37+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -5094,20 +5181,20 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.36.0",
+            "version": "v1.37.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "730c9c4471b5152d23061feb02b03382264c8a15"
+                "reference": "66be9366c76cbf23e82e7171d47cbfa54a057a62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/730c9c4471b5152d23061feb02b03382264c8a15",
-                "reference": "730c9c4471b5152d23061feb02b03382264c8a15",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/66be9366c76cbf23e82e7171d47cbfa54a057a62",
+                "reference": "66be9366c76cbf23e82e7171d47cbfa54a057a62",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
+                "php": ">=5.4.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
@@ -5118,7 +5205,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.36-dev"
+                    "dev-master": "1.37-dev"
                 }
             },
             "autoload": {
@@ -5156,7 +5243,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-12-16T10:34:11+00:00"
+            "time": "2019-01-14T14:59:29+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -7694,12 +7781,6 @@
                 "type": "git",
                 "url": "https://github.com/webflo/drupal-core-require-dev.git",
                 "reference": "626e9fa839853f99aaf400be515064fe59682d4c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/webflo/drupal-core-require-dev/zipball/626e9fa839853f99aaf400be515064fe59682d4c",
-                "reference": "626e9fa839853f99aaf400be515064fe59682d4c",
-                "shasum": ""
             },
             "require": {
                 "behat/mink": "1.7.x-dev",

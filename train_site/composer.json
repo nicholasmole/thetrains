@@ -13,6 +13,14 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "url": "https://github.com/nicholasmole/MtbaApi",
+            "type": "vcs"
+        },
+        {
+            "url": "https://github.com/nicholasmole/jsonapirequest",
+            "type": "vcs"
         }
     ],
     "require": {
@@ -24,7 +32,8 @@
         "drush/drush": "^9.5",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
+        "webmozart/path-util": "^2.3",
+        "nicholasmole/mtbaapi": ">=0.1"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "^8.6.0"
@@ -64,7 +73,7 @@
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/modules/custom/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/Commands/{$name}": ["type:drupal-drush"]
