@@ -1,2 +1,7 @@
 @import './_imports/imports.scss';
 @import './menu/menu.scss';
+
+li.menu-item.nav-item {
+	display: inline;
+	padding-right: 16px;
+}

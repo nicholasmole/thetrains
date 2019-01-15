@@ -6,10 +6,11 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/libraries/
-
+.DS_Store
 # Ignore sensitive information
 /web/sites/*/settings.php
 /web/sites/*/settings.local.php
+/web/modules/custom/
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
