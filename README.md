@@ -1,10 +1,20 @@
-# Base Drupal App
+# The Trains
 
-Description for the base drupal app
+A test drupal site. Displaying MTBA train routes
 
+## Description
 
+Create a test Drupal site using the MTBA v3 api.
+Create a custom module to display routes and
+page data.
 
-# How to start
+***WARNING***
+Dump folder has been commited only because this
+is a test site!
+
+----
+
+### How to start
 
 First go through the application and rename areas that
 have place-holder {drupal_base} or {custom...} to the 
